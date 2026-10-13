@@ -17,6 +17,7 @@ Both use the Streamable HTTP transport and are listed in the [official MCP Regis
 
 ## Other ways in
 
+- A2A agent card: https://www.arcreport.ai/.well-known/agent-card.json
 - OpenAPI spec: https://www.arcreport.ai/openapi.json
 - llms.txt: https://www.arcreport.ai/llms.txt
 - Open dataset (CC-BY-4.0): https://www.arcreport.ai/data
