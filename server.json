@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "ai.arcreport/mcp",
+  "description": "Saved agent-checkout evidence per store, free: check_store, find_stores. Scans need OAuth.",
+  "title": "ARC store checks",
+  "version": "2.1.0",
+  "websiteUrl": "https://www.arcreport.ai/mcp",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.arcreport.ai/api/mcp"
+    }
+  ]
+}
