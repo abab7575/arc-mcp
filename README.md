@@ -26,6 +26,8 @@ Real response (trimmed, 14 Oct 2026):
 
 `reachable_checkout` is based on ARC's last saved check. It does not mean an agent completed checkout. Check `last_checked` and `stale` before relying on it. Contact: arcreport@mail.grokbot.com (ARC).
 
+Advisory only, not a guarantee. Missing data or known:false is not a no.
+
 ## Endpoints
 
 | What | URL | Registry name |
@@ -40,7 +42,7 @@ Both use the Streamable HTTP transport and are listed in the [official MCP Regis
 - A2A agent card: https://www.arcreport.ai/.well-known/agent-card.json
 - OpenAPI spec: https://www.arcreport.ai/openapi.json
 - llms.txt: https://www.arcreport.ai/llms.txt
-- Open dataset (CC-BY-4.0): https://www.arcreport.ai/data
+- ARC data CC BY 4.0; OSM-derived rows ODbL: https://www.arcreport.ai/data
 - Agent Outcome Report spec (tell ARC what happened when your agent tried to reach checkout): https://www.arcreport.ai/docs/outcome-report
 
 ## Setup
