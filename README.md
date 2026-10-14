@@ -1,10 +1,30 @@
 # ARC: Agentic Report Card
 
-**ARC is the free, neutral record of which online stores AI agents can actually buy from, with dated evidence.**
+**ARC is the free, neutral record of which online stores AI agents can actually reach checkout at, with dated evidence.**
 
 Website: https://www.arcreport.ai
 
 This repo holds ARC's public MCP connector metadata and setup instructions. ARC is a hosted service, so there is nothing to install or run.
+
+## Quick start: precheck (free, no sign-in, CC BY 4.0)
+
+Before your agent tries a store, ask ARC whether agents can reach checkout there:
+
+```bash
+curl "https://www.arcreport.ai/api/precheck?url=https://allbirds.com"
+```
+
+Real response (trimmed, 14 Oct 2026):
+
+```json
+{"host":"allbirds.com","known":true,"reachable_checkout":true,
+ "rails":[{"name":"UCP","status":"valid"},{"name":"ACP","status":"not_found"},
+          {"name":"MCP","status":"yes"},{"name":"Checkout WebMCP","status":"detected"}],
+ "blockers":[],"confidence":"high","last_checked":"2026-10-13T09:47:13.000Z",
+ "stale":true,"source":"ARC (arcreport.ai)","licence":"CC BY 4.0"}
+```
+
+`reachable_checkout` is based on ARC's last saved check. It does not mean an agent completed checkout. Check `last_checked` and `stale` before relying on it. Contact: arcreport@mail.grokbot.com (ARC).
 
 ## Endpoints
 
@@ -21,7 +41,7 @@ Both use the Streamable HTTP transport and are listed in the [official MCP Regis
 - OpenAPI spec: https://www.arcreport.ai/openapi.json
 - llms.txt: https://www.arcreport.ai/llms.txt
 - Open dataset (CC-BY-4.0): https://www.arcreport.ai/data
-- Agent Outcome Report spec (tell ARC what happened when your agent tried to buy): https://www.arcreport.ai/docs/outcome-report
+- Agent Outcome Report spec (tell ARC what happened when your agent tried to reach checkout): https://www.arcreport.ai/docs/outcome-report
 
 ## Setup
 
