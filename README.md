@@ -82,7 +82,7 @@ Swap in `https://www.arcreport.ai/api/ask` to use the Ask connector.
 
 ## How ARC reports results
 
-Every result is dated and labelled by source: agent-reported, ARC-tested up to payment, or verified purchase. A missing result never counts against a store.
+Every result is dated and labelled by source: agent-reported, ARC-tested up to payment, or a verified order. A missing result never counts against a store.
 
 ## License
 
