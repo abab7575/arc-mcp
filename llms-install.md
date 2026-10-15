@@ -78,6 +78,6 @@ No sign-in needed:
 - `get_store_hub`: free ARC store card by host
 - `google_checkout_readiness`: saved Google agentic checkout readiness checks
 - `product_data_check`: saved product data and return/shipping policy check
-- `can_agent_checkout`: free live HTTP check of whether an agent can buy from a store
+- `can_agent_checkout`: free check of whether an agent can reach checkout at a store (returns ARC's saved check while new checks are paused)
 
 Signed-in (ARC account): `check_agent_readiness`, `get_readiness_result`, `list_readiness_checks`, `ask_agents_about_brand`, `get_fixes`, `bulk_create_monitors`, `list_monitors`, `monitor_summary`, `update_monitor`, `pause_monitor`, `resume_monitor`, `run_monitor_now`.
